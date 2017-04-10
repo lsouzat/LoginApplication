@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#348cc8e4"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activitys.CadastraActivity">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border_transp_black_redond">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="monospace"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="Cadastrar Usuário"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulo"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/ic_person_black_24dp" />
+
+            <EditText
+                android:id="@+id/edt_nome_cadastra"
+                style="@style/MyEditText"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageView4"
+                android:layout_toRightOf="@+id/imageView4"
+                android:fontFamily="monospace"
+                android:hint="Nome"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative4"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/ic_email_envelope" />
+
+            <EditText
+                android:id="@+id/edt_email_cadastra"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:fontFamily="monospace"
+                android:hint="E-mail"
+                android:imeOptions="actionSend"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/ic_vpn_key_black_24dp" />
+
+
+            <EditText
+                android:id="@+id/edt_senha_cadastra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyEditText"
+                android:fontFamily="monospace"
+                android:hint="Senha"
+                android:imeOptions="actionSend"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative2"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/ic_vpn_key_black_24dp" />
+
+            <EditText
+                android:id="@+id/edt_senha_cadastra_conf"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:fontFamily="monospace"
+                android:hint="Confirmação de Senha"
+                android:imeOptions="actionSend"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:layout_toEndOf="@+id/imageView3" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_cadastra"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="monospace"
+            android:text="Cadastrar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/relative3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/bt_cancela_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="monospace"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignBottom="@+id/bt_cadastra"
+            android:layout_toLeftOf="@+id/bt_cadastra"
+            android:layout_toStartOf="@+id/bt_cadastra"
+            android:layout_alignTop="@+id/bt_cadastra" />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

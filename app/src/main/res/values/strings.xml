@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Login Application</string>
+    <string name="get_ws">http://54.232.202.183/teste/ws/api.php/usuario/</string>
+    <string name="login_ws">http://54.232.202.183/teste/ws/api.php/usuario/login/</string>
+    <string name="insert_ws">http://54.232.202.183/teste/ws/api.php/usuario/</string>
+    <string name="loading">carregando espere...</string>
+    <string name="login_ok">login ok</string>
+    <string name="login_not">Senha inválida</string>
+    <string name="boas_vindas">Bem vindo</string>
+    <string name="insert_ok">usuario inserido</string>
+    <string name="campos_vazios">Todos os campos devem ser preenchidos</string>
+    <string name="campos_conf_senha">As senhas não são iguais, confira!</string>
+    <string name="sem_conexao">Falha na conexão com a internet</string>
+    <string name="senhas_diferentes">As senhas não conferem</string>
+    <string name="lista_main_ok">Selecione o email que deseja fazer o login</string>
+    <string name="em_construção">Tela em construção</string>
+    <string name="servidor_off">Servidor está offline!</string>
+</resources>

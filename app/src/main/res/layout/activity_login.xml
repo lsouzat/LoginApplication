@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#348cc8e4"
+    android:orientation="vertical"
+    tools:context=".activitys.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_transp_black_redond">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="monospace"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="Login do Sistema"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/titulo"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_transp_black_redond"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_email_login"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_email_envelope" />
+
+
+        <EditText
+            android:id="@+id/edt_email_senha"
+            style="@style/MyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/imageView"
+            android:fontFamily="monospace"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_logar_login"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relative"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
